@@ -5,7 +5,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import javax.swing.JOptionPane;
 
 /*
- * @author Nesto M.Hernandez
+ * @author Macareno Sánchez Erick
  */
 public class encuesta extends javax.swing.JFrame {
 

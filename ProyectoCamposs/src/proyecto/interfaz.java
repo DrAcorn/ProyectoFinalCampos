@@ -3,7 +3,7 @@ package proyecto;
 import java.awt.Color;
 
 /*
- * @author Nestor M.Hernandez
+ * @author Macareno Sánchez Erick
  */
 public class interfaz extends javax.swing.JFrame {
 

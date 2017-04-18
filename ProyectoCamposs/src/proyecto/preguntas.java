@@ -4,7 +4,7 @@ package proyecto;
 import java.util.concurrent.ThreadLocalRandom;
 
 /*
- * @author Nestor M.Hernandez
+ * @author Macareno Sánchez Erick
  */
 public class preguntas {
     String [] preguntas = 

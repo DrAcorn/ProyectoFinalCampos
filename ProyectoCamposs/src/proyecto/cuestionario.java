@@ -7,7 +7,7 @@ package proyecto;
 
 /**
  *
- * @author nesto
+ * @author Macareno Sánchez Erick
  */
 public class cuestionario {
     

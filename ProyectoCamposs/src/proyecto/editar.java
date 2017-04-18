@@ -12,7 +12,7 @@ import sun.awt.DefaultMouseInfoPeer;
 
 /**
  *
- * @author nesto
+ * @author Macareno Sánchez Erick
  */
 public class editar extends javax.swing.JFrame {
 
