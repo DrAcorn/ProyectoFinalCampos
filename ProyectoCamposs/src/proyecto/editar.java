@@ -6,6 +6,7 @@
 package proyecto;
 
 import com.sun.org.apache.xerces.internal.parsers.IntegratedParserConfiguration;
+import java.awt.Color;
 import javax.swing.DefaultListModel;
 import sun.awt.DefaultMouseInfoPeer;
 
@@ -37,6 +38,7 @@ public class editar extends javax.swing.JFrame {
 
     public editar() {
         initComponents();
+         this.getContentPane().setBackground(Color.gray);
     }
 
     @SuppressWarnings("unchecked")
@@ -58,10 +60,15 @@ public class editar extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jlPreguntas.setBackground(new java.awt.Color(153, 153, 153));
         jScrollPane1.setViewportView(jlPreguntas);
 
+        jlRespuestas.setBackground(new java.awt.Color(153, 153, 153));
         jScrollPane2.setViewportView(jlRespuestas);
 
+        jButton1.setBackground(new java.awt.Color(102, 102, 102));
+        jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Cargar preguntas");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,18 +76,26 @@ public class editar extends javax.swing.JFrame {
             }
         });
 
+        txtnumeroPregunta.setBackground(new java.awt.Color(153, 153, 153));
+
         jLabel1.setText("Seleccione numero de pregunta:");
 
         jLabel2.setText("Escriba nueva pregunta sin numero:");
 
+        txtnuevaPregunta.setBackground(new java.awt.Color(153, 153, 153));
+
         jLabel3.setText("Escriba nueva respuesta sin numero:");
 
+        txtNuevaRespuesta.setBackground(new java.awt.Color(153, 153, 153));
         txtNuevaRespuesta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNuevaRespuestaActionPerformed(evt);
             }
         });
 
+        btnAgregar.setBackground(new java.awt.Color(102, 102, 102));
+        btnAgregar.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregar.setText("Agregar");
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,19 +129,17 @@ public class editar extends javax.swing.JFrame {
                                 .addComponent(txtnumeroPregunta, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(btnAgregar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnAgregar, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
+                            .addComponent(jScrollPane2))))
                 .addGap(10, 10, 10))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton1)
